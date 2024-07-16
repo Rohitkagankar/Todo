@@ -24,14 +24,21 @@ form.addEventListener("submit", (evt) => {
   todo_list.appendChild(del);
 
 
-  const removeButtons = document.getElementsByClassName("delbtn");
+  // const removeButtons = document.getElementsByClassName("delbtn");
 
-  Array.from(removeButtons).forEach((removeButton) => {
-    removeButton.addEventListener("click", () => {
-      removeButton.parentNode.remove();
-    });
-  });
+  // Array.from(removeButtons).forEach((removeButton) => {
+  //   removeButton.addEventListener("click", () => {
+  //     removeButton.parentNode.remove();
+  //   });
+  // });
   todotext.value="";
   tododes.value="";
 
 });
+todo_box.addEventListener("click",function(evt){
+  if(evt.target.nodeName=="BUTTON"){
+    let delitem=evt.target.parentElement;
+    delitem.remove();
+    console.log(delitem);
+  }
+})

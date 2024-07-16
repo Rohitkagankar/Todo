@@ -1,0 +1,35 @@
+.container{
+    margin-top: 50px;
+
+}
+h1{
+    text-align: center;
+    font-size: 600;
+}
+form{
+    margin: 20px;
+}
+.todo-box{
+    border: 1px solid rgb(210, 208, 208);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 8px;
+    min-height: 400px;
+    padding: 20px;
+}
+.todolist{
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 8px;
+    padding: 10px;
+}
+.delbtn{
+    position: relative;
+    top: 70px;
+    left: 110px;
+    width: 70px;
+    height: 30px;
+}
